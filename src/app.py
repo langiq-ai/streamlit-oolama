@@ -12,7 +12,7 @@ st.title('Ollama Interaction App')
 logging.info('Streamlit app title set.')
 
 # Sidebar for user input
-st.sidebar.title('Input')
+st.title('Input')
 logging.info('Sidebar title set.')
 
 # Template for the prompt
@@ -34,7 +34,7 @@ model = Ollama(model="llama3.2")
 logging.info('Ollama model initialized with model llama3.2.')
 
 # Check if the send button is clicked
-if st.sidebar.button('Send'):
+if st.button('Send'):
     logging.info('Send button clicked.')
     if user_input:
         logging.debug(f'User input received: {user_input}')
